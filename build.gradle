@@ -8,21 +8,20 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
-    baseName = 'gs-rest-service'
-    version =  '0.1.0'
+    baseName = 'SpringRestTutorial'
+    version =  '1.0.1'
 }
 
 repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.11
 targetCompatibility = 1.8
 
 dependencies {
