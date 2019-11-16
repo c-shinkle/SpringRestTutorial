@@ -6,20 +6,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/api")
 public class UserController {
-    private Map<Integer, User> db = new HashMap<Integer, User>(){{
-        put(1, new User(1, "Christian"));
-    }};
+    private Map<Integer, User> db;
 
-    @RequestMapping("/users")
-    public User users(@RequestParam(value="id") int id) {
+    public UserController() {
+        db = new HashMap<>();
+        db.put(1, new User(1, "Christian"));
+    }
+
+    @RequestMapping("/user")
+    public User user(@RequestParam(value="id") int id) {
         return db.get(id);
     }
 
-    @GetMapping("/user/{id}/{name}")
-    @ResponseBody
-    public String user(@PathVariable int id, @PathVariable String name) {
-        db.put(id, new User(id, name));
-        return String.format("Stored: id=%d, name=%s", id, name);
+    @PostMapping("/new_user")
+    public User newUser(@RequestParam("id") int id, @RequestParam String name) {
+        User u = new User(id, name);
+        db.put(id, u);
+        return u;
     }
 }
