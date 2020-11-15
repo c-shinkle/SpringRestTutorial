@@ -1,3 +1,6 @@
-.mvn
+#Gradle
 .gradle
 build
+
+#IntelliJ
+.idea
