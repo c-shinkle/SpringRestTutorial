@@ -1,4 +1,4 @@
-package com.shinkle.SpringRestTutorial.user;
+package com.shinkle.userapi.user;
 
 import org.springframework.stereotype.Service;
 

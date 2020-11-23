@@ -1,4 +1,4 @@
-package com.shinkle.SpringRestTutorial.user;
+package com.shinkle.userapi.user;
 
 import lombok.Value;
 

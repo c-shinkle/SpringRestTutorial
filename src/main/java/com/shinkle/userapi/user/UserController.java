@@ -1,4 +1,5 @@
-package com.shinkle.SpringRestTutorial.user;
+package com.shinkle.userapi.user;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

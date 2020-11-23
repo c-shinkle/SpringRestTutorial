@@ -1,4 +1,4 @@
-package com.shinkle.SpringRestTutorial.greeting;
+package com.shinkle.userapi.greeting;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

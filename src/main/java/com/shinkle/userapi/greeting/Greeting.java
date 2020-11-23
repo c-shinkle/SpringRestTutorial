@@ -1,4 +1,4 @@
-package com.shinkle.SpringRestTutorial.greeting;
+package com.shinkle.userapi.greeting;
 
 import lombok.Value;
 
